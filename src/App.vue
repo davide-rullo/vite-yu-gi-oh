@@ -26,13 +26,15 @@ export default {
 
 
   <main>
-    <div class="search">
-      <select class="form-select" aria-label="Default select example">
+    <div class="container">
+      <div class="search">
+        <select class="form-select" aria-label="Default select example">
 
-        <option value="1">Alien</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
+          <option value="1">Alien</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
     </div>
     <AppContent></AppContent>
   </main>
@@ -43,12 +45,12 @@ export default {
 
 main {
   background-color: $yu-primary;
-  height: 1000px;
+
 
   .search {
     width: 8rem;
     padding-top: 1rem;
-    margin-left: 10rem;
+
   }
 }
 </style>
