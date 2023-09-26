@@ -13,7 +13,7 @@ export default {
     <nav class="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="../assets/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="../assets/logo.png" alt="Logo" width="65" height="24" class="d-inline-block align-text-top">
                 Yu-Gi-Oh Api
             </a>
         </div>
