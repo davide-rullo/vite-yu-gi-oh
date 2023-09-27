@@ -24,6 +24,7 @@ export default {
 
 <template>
   <AppHeader></AppHeader>
+
   <main>
     <AppSelect></AppSelect>
     <AppContent></AppContent>

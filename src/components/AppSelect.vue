@@ -10,6 +10,7 @@ export default {
     },
     mounted() {
         state.fetchData()
+        state.fetchArchetypes()
     },
     methods: {
 
@@ -21,7 +22,7 @@ export default {
         <div class="search">
             <select class="form-select" aria-label="Default select example" @change="">
 
-                <option value="1">{{ }}</option>
+                <option value="" v-for="archetype in state.arch">{{ archetype.archetype_name }}</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
             </select>
