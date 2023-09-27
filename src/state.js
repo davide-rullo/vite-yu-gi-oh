@@ -6,7 +6,7 @@ export const state = reactive({
     archetypes_url: 'https://db.ygoprodeck.com/api/v7/archetypes.php',
     cards: null,
     arch: null,
-    archetypeEl: '',
+    archetypeList: '',
 
 
 
@@ -24,7 +24,7 @@ export const state = reactive({
 
     },
 
-    fetchArchetypes() {
+    fetchArchetypes(archetypes_url) {
         axios
             .get(this.archetypes_url)
 
