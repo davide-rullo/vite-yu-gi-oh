@@ -1,6 +1,7 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppContent from './components/AppContent.vue';
+import AppSelect from './components/AppSelect.vue';
 
 
 export default {
@@ -13,7 +14,8 @@ export default {
   },
   components: {
     AppHeader,
-    AppContent
+    AppContent,
+    AppSelect
   }
 }
 
@@ -22,20 +24,8 @@ export default {
 
 <template>
   <AppHeader></AppHeader>
-
-
-
   <main>
-    <div class="container">
-      <div class="search">
-        <select class="form-select" aria-label="Default select example">
-
-          <option value="1">Alien</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-      </div>
-    </div>
+    <AppSelect></AppSelect>
     <AppContent></AppContent>
   </main>
 </template>

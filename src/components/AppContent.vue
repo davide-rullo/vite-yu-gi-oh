@@ -20,15 +20,15 @@ export default {
             <h5>Found 39 Cards</h5>
         </div>
         <div class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-5 justify-content-center align-items-center"
-            v-if="state.characters">
+            v-if="state.cards">
 
-            <div class="col  mt-4" v-for="character in state.characters">
+            <div class="col  mt-4" v-for="card in state.cards">
                 <div class="card h-100 g-4">
-                    <img :src="character.card_images[0].image_url" alt="">
+                    <img :src="card.card_images[0].image_url" alt="">
                     <div class="card-body ">
-                        <h6 class="name text-white text-uppercase">{{ character.name }}</h6>
+                        <h6 class="name text-white text-uppercase">{{ card.name }}</h6>
 
-                        <p class="text-center">{{ character.archetype }}</p>
+                        <p class="text-center">{{ card.archetype }}</p>
 
                     </div>
                 </div>
