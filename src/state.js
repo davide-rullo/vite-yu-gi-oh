@@ -3,9 +3,9 @@ import axios from 'axios';
 
 export const state = reactive({
     base_url: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
-    archetypes_url: 'https://db.ygoprodeck.com/api/v7/archetypes.php',
-    cards: null,
-    arch: null,
+    url: 'https://db.ygoprodeck.com/api/v7/archetypes.php',
+    cards: [],
+    arch: [],
     archetypeList: '',
 
 
@@ -24,9 +24,9 @@ export const state = reactive({
 
     },
 
-    fetchArchetypes(archetypes_url) {
+    fetchArchetypes(url) {
         axios
-            .get(this.archetypes_url)
+            .get(this.url)
 
             .then(response => {
                 this.arch = response.data

@@ -8,7 +8,7 @@ import { state } from "./state.js";
 export default {
 
   name: 'App',
-  emits: ['performSearch'],
+
   data() {
     return {
       state
@@ -17,9 +17,9 @@ export default {
   methods: {
     searchByArch() {
       console.log('searching', this.state.archetypeList);
-      const url = 'https://db.ygoprodeck.com/api/v7/cardinfo.php' + `?archetype=${this.state.archetypeList}`
-      console.log(url);
-      this.state.fetchArchetypes(url);
+      const urlAr = 'https://db.ygoprodeck.com/api/v7/cardinfo.php' + `?archetype=${this.state.archetypeList}`
+      console.log(urlAr);
+      this.state.fetchArchetypes(urlAr);
 
     },
 
