@@ -19,9 +19,11 @@ export default {
       console.log('searching', this.state.archetypeList);
       const urlAr = 'https://db.ygoprodeck.com/api/v7/cardinfo.php' + `?archetype=${this.state.archetypeList}`
       console.log(urlAr);
-      this.state.fetchArchetypes(urlAr);
+      this.state.fetchData(urlAr);
 
     },
+
+
 
 
   },

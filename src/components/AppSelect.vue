@@ -10,9 +10,9 @@ export default {
             state
         }
     },
-    created() {
-        state.fetchData()
-        state.fetchArchetypes()
+    mounted() {
+
+        state.fetchArchetypes(state.url)
     },
 
 }

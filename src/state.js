@@ -10,7 +10,7 @@ export const state = reactive({
 
 
 
-    fetchData() {
+    fetchData(url) {
         axios
             .get(this.base_url)
 
