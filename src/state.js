@@ -12,7 +12,7 @@ export const state = reactive({
 
     fetchData(url) {
         axios
-            .get(this.base_url)
+            .get(url)
 
             .then(response => {
                 this.cards = response.data.data
@@ -26,7 +26,7 @@ export const state = reactive({
 
     fetchArchetypes(url) {
         axios
-            .get(this.url)
+            .get(url)
 
             .then(response => {
                 this.arch = response.data

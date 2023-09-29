@@ -9,7 +9,7 @@ export default {
         }
     },
     mounted() {
-        state.fetchData(state.url)
+        state.fetchData(state.base_url)
     }
 }
 </script>
